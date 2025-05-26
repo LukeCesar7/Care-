@@ -1,4 +1,4 @@
-package com.care.record.infra.repository.application.domain;
+package com.care.record.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;

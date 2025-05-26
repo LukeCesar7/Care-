@@ -1,6 +1,6 @@
-package com.care.record.infra.repository.application.domain;
+package com.care.record.domain;
 
-import com.care.record.infra.repository.application.enums.UserType;
+import com.care.record.domain.enums.UserType;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;

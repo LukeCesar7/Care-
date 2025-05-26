@@ -1,4 +1,4 @@
-package com.care.record.infra.repository.application.domain;
+package com.care.record.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -6,11 +6,10 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-
 @Entity
 @Data
 @NoArgsConstructor
-public class Anamnese {
+public class Evolution {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,7 +18,7 @@ public class Anamnese {
     private LocalDate date;
 
     @Lob
-    private String content;
+    private String report;
 
     @ManyToOne
     @JoinColumn(name = "patient_id", nullable = false)

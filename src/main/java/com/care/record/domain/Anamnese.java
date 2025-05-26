@@ -1,15 +1,16 @@
-package com.care.record.infra.repository.application.domain;
-import com.care.record.infra.repository.application.enums.StatusService;
+package com.care.record.domain;
+
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
+
 @Entity
 @Data
 @NoArgsConstructor
-public class Service {
+public class Anamnese {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,10 +18,10 @@ public class Service {
 
     private LocalDate date;
 
-    @Enumerated(EnumType.STRING)
-    private StatusService status;
+    @Lob
+    private String content;
 
     @ManyToOne
-    @JoinColumn(name = "patient_id",nullable = false)
+    @JoinColumn(name = "patient_id", nullable = false)
     private Patient patient;
 }

@@ -1,4 +1,4 @@
-package com.care.record.infra.repository.application.enums;
+package com.care.record.domain.enums;
 
 public enum UserType {
 
