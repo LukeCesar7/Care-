@@ -23,4 +23,7 @@ public class Service {
     @ManyToOne
     @JoinColumn(name = "patient_id",nullable = false)
     private Patient patient;
+
+    public Service save(Service service) {
+    }
 }
